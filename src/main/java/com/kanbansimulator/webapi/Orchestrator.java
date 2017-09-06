@@ -13,7 +13,8 @@ public class Orchestrator {
 
     public static void run()
     {
-        GoogleSheetsConnection googleSheetsConnection = new GoogleSheetsConnection();
+        return;
+        /*GoogleSheetsConnection googleSheetsConnection = new GoogleSheetsConnection();
                 List<String> columnNames = new ArrayList<String>();
         List<Integer> wipLimits = new ArrayList<Integer>();
         List<List<Integer>> leadTimeCandidatesPerColumn = new ArrayList<List<Integer>>();
@@ -32,7 +33,7 @@ public class Orchestrator {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("Average LT is: " + average(leadTimes));
+        System.out.println("Average LT is: " + average(leadTimes));*/
     }
 
     private static void printArrayLineByLine(List<Integer> values){
