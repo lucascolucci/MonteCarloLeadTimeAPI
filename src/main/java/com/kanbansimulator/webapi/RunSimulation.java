@@ -13,8 +13,8 @@ import java.util.List;
 public class RunSimulation {
 
     @RequestMapping(method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
-    public void index() {
+    public String index() {
         Orchestrator.run();
-        return ;
+        return "{\"success\":1}";
     }
 }
