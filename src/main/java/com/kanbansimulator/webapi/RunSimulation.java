@@ -17,13 +17,6 @@ public class RunSimulation {
                         @RequestParam(value = "namesOfColumnsAffectedByGlobalWIPLimit")List<String> namesOfColumnsAffectedByGlobalWIPLimit,
                         @RequestParam(value = "globalWipLimit")Integer globalWipLimit) {
 
-        List<String> results = new ArrayList<>();
-        results.add(columnNames.toString());
-        results.add(namesOfColumnsAffectedByGlobalWIPLimit.toString());
-        results.add(wipLimits.toString());
-        results.add(leadTimeCandidatesPerColumn.toString());
-        results.add(globalWipLimit.toString());
-        //return results.toString();
         return Orchestrator.run(columnNames, wipLimits, leadTimeCandidatesPerColumn, namesOfColumnsAffectedByGlobalWIPLimit, globalWipLimit);
     }
 }
